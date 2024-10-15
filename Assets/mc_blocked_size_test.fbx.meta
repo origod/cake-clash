@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 414846b56d8155e49b64eb6b8c444082
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 2
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: mc_blocked_size_test(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube.001
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -0.099999994, y: -0.3605248, z: 0.009949684}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.002
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -2.2891018, y: -0.8043827, z: 0.10788146}
+      rotation: {x: -0.69382685, y: -0.043105938, z: 0.05705423, w: 0.7165829}
+      scale: {x: 45.93527, y: 45.935272, z: 45.93526}
+    - name: Cube.003
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: 2.2696207, y: -0.8043827, z: 0.10788146}
+      rotation: {x: 0.7165829, y: -0.057054244, z: -0.043105938, w: 0.69382685}
+      scale: {x: -45.93527, y: -45.935272, z: -45.93526}
+    - name: Cylinder
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -0.06705257, y: 0.8766896, z: -0.08442211}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.001
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -1.1242716, y: 1.2187563, z: 0}
+      rotation: {x: -0.6830127, y: -0.18301274, z: 0.18301271, w: 0.68301266}
+      scale: {x: 37.56917, y: 37.569176, z: 37.56917}
+    - name: Cylinder.002
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -1.6864188, y: -0.79360914, z: 0.0000001910425}
+      rotation: {x: 0.46521878, y: 0.53251445, z: -0.53251433, w: -0.46521872}
+      scale: {x: 25.437984, y: 25.437984, z: 25.437984}
+    - name: Cylinder.003
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -2.2891018, y: -0.79360914, z: 0.0000001899898}
+      rotation: {x: -0.46521872, y: 0.53251433, z: 0.5325144, w: -0.46521872}
+      scale: {x: -25.437986, y: -25.437984, z: -25.437986}
+    - name: Cylinder.004
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: 1.5912776, y: -0.79360914, z: 0.0000001910425}
+      rotation: {x: -0.46521872, y: 0.53251433, z: 0.5325144, w: -0.46521872}
+      scale: {x: -25.437986, y: -25.437984, z: -25.437986}
+    - name: blockedmc
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -0.099999994, y: -0.3605248, z: 0.009949684}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: size_ref
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -6.305783, y: 0, z: -2.7374415}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 150, y: 150, z: 150}
+    - name: front
+      parentName: mc_blocked_size_test(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.2113167e-15, y: 1, z: -0.000000081460335, w: 0.0000000754979}
+      scale: {x: 160.12479, y: 160.12479, z: 160.12479}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
