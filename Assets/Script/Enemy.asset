@@ -16,5 +16,10 @@ MonoBehaviour:
   - enemyName: 
     hp: 1
     attack: 1
-    speed: 2
+    speed: 7
+    type: 0
+  - enemyName: 
+    hp: 1
+    attack: 1
+    speed: 3
     type: 0

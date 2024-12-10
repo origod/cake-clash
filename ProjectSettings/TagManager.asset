@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ball
   - Enemy
+  - weapon
+  - Audio
+  - Bomb
+  - GameObject
   layers:
   - Default
   - TransparentFX

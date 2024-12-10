@@ -11,6 +11,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _mainMenuCanvasGO;
     [SerializeField] private GameObject _settingsMenuCanvasGO;
     [SerializeField] private GameObject _gameoverCanvasGO;
+    [SerializeField] private GameObject _gameSettingCanvasGO;
+    [SerializeField] private GameObject _playCanvasGO;
 
     [Header("Player Scripts to Deactivate on Pause")]
     [SerializeField] private PalyerScript _player;
@@ -19,6 +21,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _mainMenuFirst;
     [SerializeField] private GameObject _settingMenuFirst;
     [SerializeField] private GameObject _gameoverFirst;
+    [SerializeField] private GameObject _gameSettingFirst;
 
     private bool isPaused;
 
@@ -26,8 +29,10 @@ public class MenuManager : MonoBehaviour
     {
         Time.timeScale = 1f;
 
+        _playCanvasGO.SetActive(true);
         _mainMenuCanvasGO.SetActive(false);
         _settingsMenuCanvasGO.SetActive(false);
+        _gameSettingCanvasGO.SetActive(false);
         _gameoverCanvasGO.SetActive(false);
     }
     void Update()
@@ -45,7 +50,7 @@ public class MenuManager : MonoBehaviour
         //        Unpause();
         //    }
         //}
-        if (_player.currentHP == 0)
+        if (_player.endFlag )
         {
             GameOver();
         }
@@ -85,21 +90,36 @@ public class MenuManager : MonoBehaviour
     private void OpenMainMenu()
     {
         _mainMenuCanvasGO.SetActive(true);
+        _playCanvasGO.SetActive(false);
         _settingsMenuCanvasGO.SetActive(false);
+        _gameSettingCanvasGO.SetActive(false);
 
         EventSystem.current.SetSelectedGameObject(_mainMenuFirst);
     }
     private void OpenSettingsMenuHandle()
     {
         _settingsMenuCanvasGO.SetActive(true);
+        _playCanvasGO.SetActive(false);
         _mainMenuCanvasGO.SetActive(false);
+        _gameSettingCanvasGO.SetActive(false);
 
         EventSystem.current.SetSelectedGameObject(_settingMenuFirst);
     }
-    private void CloseAllMenus()
+    private void OpenGameSetting()
     {
+        _gameSettingCanvasGO.SetActive(true);
+        _playCanvasGO.SetActive(false);
         _mainMenuCanvasGO.SetActive(false);
         _settingsMenuCanvasGO.SetActive(false);
+
+        EventSystem.current.SetSelectedGameObject(_gameSettingFirst );
+    }
+    private void CloseAllMenus()
+    {
+        _playCanvasGO.SetActive(true);
+        _mainMenuCanvasGO.SetActive(false);
+        _settingsMenuCanvasGO.SetActive(false);
+        _gameSettingCanvasGO.SetActive(false);
 
         EventSystem.current.SetSelectedGameObject(null);
     }
@@ -107,14 +127,22 @@ public class MenuManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         _player.enabled = false;
+        _playCanvasGO.SetActive(false);
+        _settingsMenuCanvasGO.SetActive(false);
+        _mainMenuCanvasGO.SetActive(false);
+        _gameSettingCanvasGO.SetActive(false);
         _gameoverCanvasGO.SetActive(true);
 
-       // EventSystem.current.SetSelectedGameObject(null);
+        // EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(_gameoverFirst);
     }
     public void OnSettingsPress()
     {
         OpenSettingsMenuHandle();
+    }
+    public void OnGameSettingPress()
+    {
+        OpenGameSetting();
     }
     public void OnResumePress()
     {
@@ -129,5 +157,9 @@ public class MenuManager : MonoBehaviour
         //Time.timeScale = 1f;
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void OnRetirePress()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
 }
